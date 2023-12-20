@@ -4,13 +4,22 @@
   box-sizing: border-box;
   list-style: none !important;
   text-decoration: none !important;
+  font-size: 18px;
+}
+* h1,
+* h3 {
+  font-family: "Quicksand", sans-serif;
+}
+* h4,
+* h5 {
+  font-family: "Crimson Text", serif;
 }
 
 header {
-  background-color: rgba(34, 108, 89, 0.7);
+  background-color: rgba(34, 108, 89, 0.9);
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 11;
 }
 header .header {
   display: flex;
@@ -18,8 +27,12 @@ header .header {
   align-items: center;
   padding: 10px 0;
 }
+header .header .fa-bars {
+  display: none;
+}
 header .header h1 {
   color: white;
+  font-weight: 400;
 }
 header .header nav ul {
   display: flex;
@@ -29,6 +42,16 @@ header .header nav ul {
 header .header nav ul li a {
   color: white;
 }
+@media screen and (max-width: 767px) {
+  header .header nav {
+    display: none;
+  }
+  header .header .fa-bars {
+    display: block;
+    color: white;
+    font-size: 20px;
+  }
+}
 
 #banner {
   display: flex;
@@ -36,6 +59,9 @@ header .header nav ul li a {
 }
 #banner .banner {
   width: 100%;
+}
+#banner .banner button .cont {
+  color: #226c59;
 }
 #banner .banner .firstSec {
   background-image: url("../images/sl1-967x725.jpg");
@@ -129,4 +155,245 @@ header .header nav ul li a {
   display: flex;
   align-items: center;
   padding: 40px 20px;
+}
+#services #mission {
+  padding: 8rem 0;
+}
+#services #mission .container .mission {
+  display: flex;
+}
+#services #mission .container .mission .our-mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 10%;
+  width: 50%;
+  background-color: #1b745e;
+  color: white;
+}
+#services #mission .container .mission .our-mission button {
+  background-color: #fff;
+  padding: 10px 15px;
+  color: #1b745e;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+}
+#services #mission .container .mission .our-mission button:hover {
+  background-color: #1b745e;
+  color: white;
+  border: 1px solid white;
+}
+#services #mission .container .mission .picture {
+  width: 50%;
+}
+#services #mission .container .mission .picture img {
+  width: 100%;
+}
+#services #features .container .features {
+  display: flex;
+  justify-content: space-between;
+}
+#services #features .container .features .feature {
+  color: #1b745e;
+  width: 200px;
+}
+#services #features .container .features .feature .heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#services #features .container .features .feature .heading i {
+  font-size: 2rem;
+}
+
+#sale {
+  padding: 5rem 0;
+}
+#sale .container .sale {
+  padding: 0 8rem;
+}
+#sale .container .sale img {
+  background-color: #e0ecdc;
+  height: 200px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+#sale .container .sale .content {
+  z-index: 22;
+  position: relative;
+  bottom: 150px;
+  left: 50px;
+  color: white;
+}
+
+#flowersPrising {
+  background-image: url("../images/background1.jpg");
+  padding: 5rem 0;
+}
+#flowersPrising .container .flowersPrising {
+  text-align: center;
+}
+#flowersPrising .container .flowersPrising .products {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+#flowersPrising .container .flowersPrising .products .card {
+  width: 30%;
+  margin-bottom: 2rem;
+  border: none;
+}
+#flowersPrising .container .flowersPrising .products .card img {
+  width: 100%;
+}
+#flowersPrising .container .flowersPrising .products .card .content {
+  background-color: transparent;
+  border: none;
+  color: #1b745e;
+}
+#flowersPrising #eventsPricing {
+  padding: 5rem 0;
+}
+#flowersPrising #eventsPricing .container .eventsPricing {
+  color: #1b745e;
+  text-align: center;
+}
+#flowersPrising #eventsPricing .container .eventsPricing .cards {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+#flowersPrising #eventsPricing .container .eventsPricing .cards .card {
+  padding: 5rem 3rem;
+  border: 1px solid #1b745e;
+  color: #1b745e;
+  background-color: #fef1e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#flowersPrising #eventsPricing .container .eventsPricing .cards .card .head {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#flowersPrising #eventsPricing .container .eventsPricing .cards .card button {
+  padding: 15px 20px;
+  background-color: #c4d5c0;
+  border: none;
+}
+
+#our-team {
+  padding: 6rem 0;
+}
+#our-team .container .our-team {
+  text-align: center;
+}
+#our-team .container .our-team .cards {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+#our-team .container .our-team .cards .card {
+  position: relative;
+  border: none;
+  width: 33%;
+}
+#our-team .container .our-team .cards .card:hover .content {
+  visibility: visible;
+}
+#our-team .container .our-team .cards .card .name {
+  padding: 1rem 0;
+  color: #226c59;
+}
+#our-team .container .our-team .cards .card img {
+  width: 100%;
+}
+#our-team .container .our-team .cards .card .contact {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  bottom: 19rem;
+  left: 10px;
+}
+#our-team .container .our-team .cards .card .contact i {
+  color: #226c59;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+footer {
+  padding: 5rem 0;
+  background-color: #e0ecdc;
+}
+footer .container .footer {
+  display: flex;
+}
+footer .container .footer .left {
+  width: 50%;
+}
+footer .container .footer .left form {
+  position: relative;
+}
+footer .container .footer .left form input {
+  width: 90%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #226c59;
+  padding: 10px 5px;
+  background-color: transparent;
+}
+footer .container .footer .left form input::-moz-placeholder {
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+}
+footer .container .footer .left form input:-ms-input-placeholder {
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+}
+footer .container .footer .left form input::placeholder {
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+}
+footer .container .footer .left form button {
+  padding: 15px 35px;
+  border: none;
+  color: #1b745e;
+  position: absolute;
+  bottom: 3px;
+  right: 65px;
+}
+footer .container .footer .right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer .right nav ul li {
+  margin-bottom: 10px;
+}
+footer .container .footer .right nav ul li a {
+  color: #226c59;
+  display: inline-block;
+  color: #226c59;
+  text-decoration: none;
+}
+footer .container .footer .right nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #226c59;
+  transition: width 0.3s;
+}
+footer .container .footer .right nav ul li a:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

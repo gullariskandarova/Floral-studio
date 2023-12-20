@@ -1,0 +1,34 @@
+{
+  "produts": [
+    {
+      "image": "./assets/images/b4.jpg",
+      "title": "Dahlia",
+      "price": 45
+    },
+    {
+      "image": "./assets/images/b2.jpg",
+      "title": "Mazus",
+      "price": 45
+    },
+    {
+      "image": "./assets/images/b3.jpg",
+      "title": "Pansies",
+      "price": 45
+    },
+    {
+      "image": "./assets/images/b4.jpg",
+      "title": "Dahlia",
+      "price": 45
+    },
+    {
+      "image": "./assets/images/b2.jpg",
+      "title": "Mazus",
+      "price": 45
+    },
+    {
+      "image": "./assets/images/b3.jpg",
+      "title": "Pansies",
+      "price": 45
+    }
+  ]
+}
