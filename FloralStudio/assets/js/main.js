@@ -1,5 +1,7 @@
 const BASE_URL = " http://localhost:8080";
 const products = document.querySelector(".products");
+const menu = document.querySelector(".fa-bars");
+const mediaNav = document.querySelector(".media-nav");
 async function getAllProdutcs() {
   try {
     let res = await axios(`${BASE_URL}/produts`);
@@ -37,3 +39,9 @@ function drowCards(data) {
   });
 }
 
+menu.addEventListener("click", function () {
+  menu.classList.toggle("fa-x");
+  menu.classList.contains("fa-x")
+    ? (mediaNav.style.display = "flex")
+    : (mediaNav.style.display = "none");
+});

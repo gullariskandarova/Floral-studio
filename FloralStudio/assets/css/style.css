@@ -42,6 +42,9 @@ header .header nav ul {
 header .header nav ul li a {
   color: white;
 }
+header .container .media-nav {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   header .header nav {
     display: none;
@@ -50,6 +53,18 @@ header .header nav ul li a {
     display: block;
     color: white;
     font-size: 20px;
+  }
+  header .container .media-nav {
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  header .container .media-nav div {
+    display: flex;
+    gap: 1.5rem;
+  }
+  header .container .media-nav a {
+    color: white;
   }
 }
 
@@ -137,6 +152,23 @@ header .header nav ul li a {
   top: 50px;
   left: 130px;
 }
+@media screen and (max-width: 767px) {
+  #local-florist .container .local-florist {
+    flex-direction: column;
+  }
+  #local-florist .container .local-florist .content {
+    width: 100%;
+  }
+  #local-florist .container .local-florist .images {
+    width: 100%;
+  }
+  #local-florist .container .local-florist .images .big {
+    display: none;
+  }
+  #local-florist .container .local-florist .images .small {
+    width: 100%;
+  }
+}
 
 #services {
   padding: 6rem 0;
@@ -190,6 +222,18 @@ header .header nav ul li a {
 #services #mission .container .mission .picture img {
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  #services #mission .container .mission {
+    flex-direction: column-reverse;
+  }
+  #services #mission .container .mission .picture {
+    width: 100%;
+  }
+  #services #mission .container .mission .our-mission {
+    width: 100%;
+    padding: 2rem;
+  }
+}
 #services #features .container .features {
   display: flex;
   justify-content: space-between;
@@ -205,6 +249,14 @@ header .header nav ul li a {
 }
 #services #features .container .features .feature .heading i {
   font-size: 2rem;
+}
+@media screen and (max-width: 767px) {
+  #services #features .container .features {
+    flex-direction: column;
+  }
+  #services #features .container .features .feature {
+    width: 100%;
+  }
 }
 
 #sale {
@@ -225,6 +277,12 @@ header .header nav ul li a {
   bottom: 150px;
   left: 50px;
   color: white;
+}
+@media screen and (max-width: 767px) {
+  #sale .container .sale {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 #flowersPrising {
@@ -254,6 +312,11 @@ header .header nav ul li a {
   border: none;
   color: #1b745e;
 }
+@media screen and (max-width: 767px) {
+  #flowersPrising .container .flowersPrising .products .card {
+    width: 100%;
+  }
+}
 #flowersPrising #eventsPricing {
   padding: 5rem 0;
 }
@@ -268,7 +331,7 @@ header .header nav ul li a {
   gap: 1.5rem;
 }
 #flowersPrising #eventsPricing .container .eventsPricing .cards .card {
-  padding: 5rem 3rem;
+  padding: 3rem 2rem;
   border: 1px solid #1b745e;
   color: #1b745e;
   background-color: #fef1e6;
@@ -288,6 +351,15 @@ header .header nav ul li a {
   background-color: #c4d5c0;
   border: none;
 }
+@media screen and (max-width: 767px) {
+  #flowersPrising #eventsPricing .container .eventsPricing .cards {
+    flex-direction: column;
+  }
+  #flowersPrising #eventsPricing .container .eventsPricing .cards .card {
+    width: 100%;
+    padding: 2rem;
+  }
+}
 
 #our-team {
   padding: 6rem 0;
@@ -297,6 +369,7 @@ header .header nav ul li a {
 }
 #our-team .container .our-team .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 5rem 0;
 }
@@ -329,6 +402,11 @@ header .header nav ul li a {
   background-color: #fff;
   border-radius: 50%;
   padding: 20px;
+}
+@media screen and (max-width: 767px) {
+  #our-team .container .our-team .cards .card {
+    width: 50%;
+  }
 }
 
 footer {
@@ -396,4 +474,18 @@ footer .container .footer .right nav ul li a::after {
 }
 footer .container .footer .right nav ul li a:hover::after {
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  footer .container .footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .container .footer .left {
+    width: 100%;
+  }
+  footer .container .footer .right {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
