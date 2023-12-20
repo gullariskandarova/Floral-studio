@@ -17,7 +17,7 @@
 
 header {
   background-color: rgba(34, 108, 89, 0.9);
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 11;
 }
@@ -292,6 +292,17 @@ header .container .media-nav {
 #flowersPrising .container .flowersPrising {
   text-align: center;
 }
+#flowersPrising .container .flowersPrising button {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid #1b745e;
+  color: #1b745e;
+  transition: all 0.4s;
+}
+#flowersPrising .container .flowersPrising button:hover {
+  background-color: #1b745e;
+  color: white;
+}
 #flowersPrising .container .flowersPrising .products {
   margin: 2rem 0;
   display: flex;
@@ -378,7 +389,7 @@ header .container .media-nav {
   border: none;
   width: 33%;
 }
-#our-team .container .our-team .cards .card:hover .content {
+#our-team .container .our-team .cards .card:hover .contact {
   visibility: visible;
 }
 #our-team .container .our-team .cards .card .name {
@@ -394,14 +405,14 @@ header .container .media-nav {
   flex-direction: column;
   gap: 10px;
   position: absolute;
-  bottom: 19rem;
+  bottom: 22rem;
   left: 10px;
 }
 #our-team .container .our-team .cards .card .contact i {
   color: #226c59;
   background-color: #fff;
   border-radius: 50%;
-  padding: 20px;
+  padding: 12px;
 }
 @media screen and (max-width: 767px) {
   #our-team .container .our-team .cards .card {
@@ -431,10 +442,6 @@ footer .container .footer .left form input {
   background-color: transparent;
 }
 footer .container .footer .left form input::-moz-placeholder {
-  font-family: "Crimson Text", serif;
-  font-size: 20px;
-}
-footer .container .footer .left form input:-ms-input-placeholder {
   font-family: "Crimson Text", serif;
   font-size: 20px;
 }

@@ -1,34 +1,46 @@
 {
-  "produts": [
+  "products": [
     {
       "image": "./assets/images/b4.jpg",
       "title": "Dahlia",
-      "price": 45
+      "price": 45,
+      "description": "Lorem ipsum, dolor sit amet",
+      "id": 1
     },
     {
       "image": "./assets/images/b2.jpg",
       "title": "Mazus",
-      "price": 45
+      "price": 45,
+      "description": "Lorem ipsum, dolor sit amet",
+      "id": 2
     },
     {
       "image": "./assets/images/b3.jpg",
       "title": "Pansies",
-      "price": 45
+      "price": 45,
+      "description": "Lorem ipsum, dolor sit amet",
+      "id": 3
     },
     {
       "image": "./assets/images/b4.jpg",
       "title": "Dahlia",
-      "price": 45
+      "price": 45,
+      "description": "Lorem ipsum, dolor sit amet",
+      "id": 4
     },
     {
       "image": "./assets/images/b2.jpg",
       "title": "Mazus",
-      "price": 45
+      "price": 45,
+      "description": "Lorem ipsum, dolor sit amet",
+      "id": 5
     },
     {
       "image": "./assets/images/b3.jpg",
       "title": "Pansies",
-      "price": 45
+      "price": 45,
+      "description": "Lorem ipsum, dolor sit amet",
+      "id": 6
     }
   ]
 }

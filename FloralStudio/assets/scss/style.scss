@@ -16,7 +16,7 @@
 }
 header {
   background-color: rgba($color: #226c59, $alpha: 0.9);
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 11;
   .header {
@@ -329,6 +329,17 @@ header {
   .container {
     .flowersPrising {
       text-align: center;
+      button {
+        padding: 10px 35px;
+        background-color: transparent;
+        border: 1px solid #1b745e;
+        color: #1b745e;
+        transition: all 0.4s;
+        &:hover {
+          background-color: #1b745e;
+          color: white;
+        }
+      }
       .products {
         margin: 2rem 0;
         display: flex;
@@ -421,7 +432,7 @@ header {
         padding: 5rem 0;
         .card {
           &:hover {
-            .content {
+            .contact {
               visibility: visible;
             }
           }
@@ -441,13 +452,13 @@ header {
             flex-direction: column;
             gap: 10px;
             position: absolute;
-            bottom: 19rem;
+            bottom: 22rem;
             left: 10px;
             i {
               color: #226c59;
               background-color: #fff;
               border-radius: 50%;
-              padding: 20px;
+              padding: 12px;
             }
           }
         }
@@ -537,7 +548,7 @@ footer {
         .left {
           width: 100%;
         }
-        .right{
+        .right {
           width: 100%;
           flex-direction: column;
           align-items: center;
