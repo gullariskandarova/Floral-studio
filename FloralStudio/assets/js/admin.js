@@ -1,6 +1,8 @@
 const tBody = document.querySelector("tbody");
 const BASE_URL = "http://localhost:8080";
 let productCopy = [];
+const form = document.querySelector("form");
+const allInputs = document.querySelectorAll("input");
 async function getAllProduct() {
   try {
     let res = await axios(`${BASE_URL}/products`);
@@ -40,3 +42,16 @@ async function deleteProduct(id, icon) {
 
 // }
 
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log(allInputs[3].value);
+
+  let newProduct = {
+    image: `./assets/images/${allInputs[3].value.split("\\")[2]}`,
+    title: allInputs[0].value,
+    price: allInputs[1].value,
+    description: allInputs[2].value,
+  };
+  axios.post(`${BASE_URL}/products`, newProduct);
+  console.log(newProduct);
+});

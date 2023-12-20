@@ -1,13 +1,6 @@
 {
   "products": [
     {
-      "image": "./assets/images/b4.jpg",
-      "title": "Dahlia",
-      "price": 45,
-      "description": "Lorem ipsum, dolor sit amet",
-      "id": 1
-    },
-    {
       "image": "./assets/images/b2.jpg",
       "title": "Mazus",
       "price": 45,
@@ -41,6 +34,13 @@
       "price": 45,
       "description": "Lorem ipsum, dolor sit amet",
       "id": 6
+    },
+    {
+      "image": "./assets/images/b4.jpg",
+      "title": "xihuv@mailinator.com",
+      "price": "kysec@mailinator.com",
+      "description": "tujy@mailinator.com",
+      "id": 7
     }
   ]
 }
