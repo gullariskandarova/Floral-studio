@@ -1,46 +1,53 @@
 {
   "products": [
     {
-      "image": "./assets/images/b2.jpg",
-      "title": "Mazus",
-      "price": 45,
-      "description": "Lorem ipsum, dolor sit amet",
-      "id": 2
-    },
-    {
-      "image": "./assets/images/b3.jpg",
-      "title": "Pansies",
-      "price": 45,
-      "description": "Lorem ipsum, dolor sit amet",
+      "image": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/portr1.jpg",
+      "title": "testtest",
+      "price": "4599",
+      "description": "Lorem ipsum, dolor sit amettt",
       "id": 3
     },
     {
-      "image": "./assets/images/b4.jpg",
+      "image": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b2.jpg",
       "title": "Dahlia",
       "price": 45,
       "description": "Lorem ipsum, dolor sit amet",
       "id": 4
     },
     {
-      "image": "./assets/images/b2.jpg",
+      "image": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b4.jpg",
       "title": "Mazus",
       "price": 45,
       "description": "Lorem ipsum, dolor sit amet",
       "id": 5
     },
     {
-      "image": "./assets/images/b3.jpg",
+      "image": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b3.jpg",
       "title": "Pansies",
       "price": 45,
       "description": "Lorem ipsum, dolor sit amet",
       "id": 6
     },
     {
-      "image": "./assets/images/b4.jpg",
-      "title": "xihuv@mailinator.com",
-      "price": "kysec@mailinator.com",
-      "description": "tujy@mailinator.com",
-      "id": 7
+      "image": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b2.jpg",
+      "title": "Distinctio Sed qui ",
+      "price": "78",
+      "description": "Architecto temporibu",
+      "id": 8
+    },
+    {
+      "image": "./assets/images/portr1.jpg",
+      "title": "test",
+      "price": "100",
+      "description": "Lorem ipsum, dolor sit amet",
+      "id": 9
+    },
+    {
+      "image": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/sl3-1050x700.jpg",
+      "title": "an dolore ullamco un",
+      "price": "26",
+      "description": "Aut suscipit sit qu",
+      "id": 11
     }
   ]
 }
