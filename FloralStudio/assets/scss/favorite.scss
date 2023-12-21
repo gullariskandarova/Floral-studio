@@ -41,7 +41,7 @@ header {
           a {
             color: white;
           }
-          sup {
+          sup{
             font-size: 1rem;
             color: red;
             background-color: #fff;
@@ -85,35 +85,46 @@ header {
     }
   }
 }
-#form {
+
+#favorites {
+  padding: 5rem 0;
   .container {
-    .form {
-      h1 {
-        text-align: center;
-        padding: 7rem 0 3rem 0;
-      }
-      button {
-        position: relative;
-        left: 50%;
-        padding: 10px 50px;
-        margin-bottom: 2rem;
+    .favorites {
+      color: #1b745e;
+      text-align: center;
+      .products {
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1.5rem;
+        .card {
+          .content{
+            padding: 2rem 0;
+          }
+          border: 1px solid #1b745e;
+          color: #1b745e;
+          background-color: #fef1e6;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          width: 30%;
+          img {
+            width: 100%;
+          }
+        }
       }
     }
   }
-}
-
-#table {
-  .container {
-    .table {
-      tbody {
-        td {
-          font-size: 25px;
-          img {
-            width: 80px;
-            border-radius: 50%;
-          }
-          i {
-            font-size: 25px;
+  @media screen and (max-width: 767px) {
+    .container {
+      .eventsPricing {
+        .products {
+          flex-direction: column;
+          .card {
+            width: 100%;
+            padding: 2rem;
           }
         }
       }

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style: none !important;
   text-decoration: none !important;
+  outline: none;
   font-size: 18px;
 }
 * h1,
@@ -35,12 +36,21 @@ header .header h1 {
   font-weight: 400;
 }
 header .header nav ul {
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 header .header nav ul li a {
   color: white;
+}
+header .header nav ul li sup {
+  font-size: 1rem;
+  color: red;
+  background-color: #fff;
+  border: 1px solid white;
+  padding: 0 3px;
+  border-radius: 50%;
 }
 header .container .media-nav {
   display: none;
@@ -77,6 +87,19 @@ header .container .media-nav {
 }
 #banner .banner button .cont {
   color: #226c59;
+  display: inline-block;
+  text-decoration: none;
+}
+#banner .banner button .cont::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #226c59;
+  transition: width 0.3s;
+}
+#banner .banner button .cont:hover::before {
+  width: 100%;
 }
 #banner .banner .firstSec {
   background-image: url("../images/sl1-967x725.jpg");
@@ -292,6 +315,27 @@ header .container .media-nav {
 #flowersPrising .container .flowersPrising {
   text-align: center;
 }
+#flowersPrising .container .flowersPrising .pros {
+  padding: 2rem 0;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: start;
+}
+#flowersPrising .container .flowersPrising .pros input {
+  padding: 6px 5px;
+  width: 30%;
+}
+#flowersPrising .container .flowersPrising .pros button {
+  padding: 6px 35px;
+  background-color: transparent;
+  border: 1px solid #1b745e;
+  color: #1b745e;
+  transition: all 0.4s;
+}
+#flowersPrising .container .flowersPrising .pros button:hover {
+  background-color: #1b745e;
+  color: white;
+}
 #flowersPrising .container .flowersPrising button {
   padding: 10px 35px;
   background-color: transparent;
@@ -322,6 +366,16 @@ header .container .media-nav {
   background-color: transparent;
   border: none;
   color: #1b745e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#flowersPrising .container .flowersPrising .products .card .content p {
+  color: red;
+}
+#flowersPrising .container .flowersPrising .products .card .content i {
+  font-size: 25px;
 }
 @media screen and (max-width: 767px) {
   #flowersPrising .container .flowersPrising .products .card {
@@ -418,6 +472,11 @@ header .container .media-nav {
   #our-team .container .our-team .cards .card {
     width: 50%;
   }
+  #our-team .container .our-team .cards .card .contact {
+    bottom: 60%;
+    left: 25%;
+    flex-direction: row;
+  }
 }
 
 footer {
@@ -440,8 +499,13 @@ footer .container .footer .left form input {
   border-bottom: 1px solid #226c59;
   padding: 10px 5px;
   background-color: transparent;
+  font-family: "Crimson Text", serif;
 }
 footer .container .footer .left form input::-moz-placeholder {
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+}
+footer .container .footer .left form input:-ms-input-placeholder {
   font-family: "Crimson Text", serif;
   font-size: 20px;
 }
@@ -475,7 +539,7 @@ footer .container .footer .right nav ul li a::after {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
+  height: 1px;
   background: #226c59;
   transition: width 0.3s;
 }
